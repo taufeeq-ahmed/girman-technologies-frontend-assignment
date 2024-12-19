@@ -20,7 +20,7 @@ function UserCard({ user }: Props) {
   const handleClick = () => {};
 
   return (
-    <div className="user-card w-[390px] h-[310px] rounded-[18px] p-6  bg-white">
+    <div className="user-card w-full sm:w-[390px] h-[310px] rounded-[18px] p-6  bg-white">
       <div className="pb-14 border-b-[1px]">
         <Image
           src={"/user.png"}

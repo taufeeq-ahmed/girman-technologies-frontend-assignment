@@ -1,5 +1,6 @@
 "use client";
 
+import NotFound from "@/components/not-found";
 import Search from "@/components/search";
 import UserCard from "@/components/user-card";
 import { users } from "@/lib/users";
@@ -14,12 +15,16 @@ export default function Home() {
   });
 
   return (
-    <div className="home-page flex justify-center h-full flex-col">
+    <div className="home-page flex justify-start h-full flex-col">
       <Search query={query || ""} setQuery={setQuery} />
-      <div className="users-list overflow-scroll w-[800px] mx-auto flex flex-wrap gap-5 mt-8">
-        {filteredUsers.map((user, idx) => {
-          return <UserCard user={user} key={idx} />;
-        })}
+      <div className="users-list overflow-scroll sm:w-[800px] sm:mx-auto flex flex-col sm:flex-row items-center sm:flex-wrap gap-5 mt-8 px-10 sm:px-0 ">
+        {filteredUsers.length > 0 ? (
+          filteredUsers.map((user, idx) => {
+            return <UserCard user={user} key={idx} />;
+          })
+        ) : (
+          <NotFound />
+        )}
       </div>
     </div>
   );
