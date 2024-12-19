@@ -10,6 +10,7 @@ export default {
   theme: {
   	extend: {
   		colors: {
+			"themed-blue":"rgba(48, 99, 230, 1)",
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -87,7 +88,10 @@ export default {
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out'
-  		}
+  		},
+		boxShadow:{
+			navbar: "0px 1.41px 8.43px 0px rgba(0, 0, 0, 0.25)"
+		}
   	}
   },
   plugins: [require("tailwindcss-animate")],
