@@ -93,7 +93,8 @@ export default {
 			'custom-gradient': 'linear-gradient(180deg, #FFFFFF 31%, #B1CBFF 100%)',
 		},
 		boxShadow:{
-			navbar: "0px 1.41px 8.43px 0px rgba(0, 0, 0, 0.25)"
+			navbar: "0px 1.41px 8.43px 0px rgba(0, 0, 0, 0.25)",
+			searchbar:"box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.05)"
 		},	
 		height:{
 			"layout-height":"calc(100vh - 110px)",

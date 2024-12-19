@@ -4,7 +4,7 @@ import SearchLogo from "./search-logo";
 
 function Search() {
   return (
-    <div className="search-component">
+    <div className="search-component sm:mx-auto w-full sm:w-fit px-10">
       <SearchLogo />
       <SearchBar />
     </div>
