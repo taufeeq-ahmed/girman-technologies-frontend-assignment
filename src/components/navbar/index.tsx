@@ -10,8 +10,8 @@ function Navbar() {
   };
 
   return (
-    <div className="h-[60px] w-full sm:h-[110px] shadow-navbar flex justify-center items-center">
-      <div className="nav-content w-full px-10 sm:w-[1000px] flex justify-between items-center">
+    <div className="h-[60px] w-full sm:h-[110px] flex justify-center items-center shadow-navbar z-10 relative ">
+      <div className="nav-content w-full px-10 sm:w-[1000px] flex justify-between items-center ">
         <Image
           src={"/girman-logo-small.svg"}
           alt="logo-small"

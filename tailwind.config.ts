@@ -89,10 +89,18 @@ export default {
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out'
   		},
+		backgroundImage: {
+			'custom-gradient': 'linear-gradient(180deg, #FFFFFF 31%, #B1CBFF 100%)',
+		},
 		boxShadow:{
 			navbar: "0px 1.41px 8.43px 0px rgba(0, 0, 0, 0.25)"
-		}
-  	}
+		},	
+		height:{
+			"layout-height":"calc(100vh - 110px)",
+			"layout-height-mobile":"calc(100vh - 60px)"
+		},
+		
+  	},
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
