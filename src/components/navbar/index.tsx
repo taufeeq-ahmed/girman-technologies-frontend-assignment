@@ -1,12 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import {
-  Dialog,
-  DialogTrigger,
-  DialogContent,
-  DialogTitle,
-} from "../ui/dialog";
+
 import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
 
 function Navbar() {
